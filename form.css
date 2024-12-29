@@ -1,0 +1,53 @@
+
+.h2{
+    color: red;
+    background: bisque;
+}
+form{
+    width: 50%;
+    margin: 20px auto;
+}
+form label,
+form label{
+    display: inline-block;
+}
+
+label{
+    width: 10%;
+    min-width: 60px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    width: 80%;
+    padding: 5px;
+    font-size: 20px;
+}
+input[type="text"]:hover
+input[type="password"]:hover
+input[type="email"]:hover{
+    border: 2px solid greenyellow;
+}
+input[type="submit"],
+input[type="reset"]{
+    padding: 5px 20px;
+    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+
+input[type="submit"]{
+    background: rgb(187, 232, 250);
+    cursor: pointer;
+    color: blue;
+}
+input[type="reset"]{
+    background: rgb(252, 164, 2);
+    cursor: pointer;
+}
+form div{
+    margin: 15px 0;
+}
+.ct{
+    text-align: center;
+}

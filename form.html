@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表單練習</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <h1>
+        <center>
+            表單練習
+        </center>
+    </h1>
+    <h2 class="h2">新會員註冊</h2>
+
+    <form action="?" method="get">
+        <div>
+            <label for="account">帳號:</label>
+            <input type="text" name="account" id="account">
+        </div>
+
+
+        <div>
+            <label for="password">密碼:</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="">居住地:</label>
+            <select name="city" id="city">
+                <option value="新北市">新北市</option>
+                <option value="台北市">台北市</option>
+                <option value="桃園市">桃園市</option>
+                <option value="苗栗縣">苗栗縣</option>
+                <option value="宜蘭市">宜蘭縣</option>
+                <option value="花蓮市">花蓮縣</option>
+                <option value="台中市">台中市</option>
+                <option value="南投縣">南投縣</option>
+                <option value="彰化縣">彰化縣</option>
+                <option value="雲林縣">雲林縣</option>
+                <option value="屏東縣">屏東縣</option>
+                <option value="台東縣">台東縣</option>
+                <option value="離島 縣/市">離島 縣/市</option>
+            </select>
+            <!--下拉選單-->
+        </div>
+        <div>
+            <label for="">國家:</label>
+            <select name="city" id="city">
+                <option value="台灣">台灣</option>
+                <option value="美國">美國</option>
+                <option value="英國">英國</option>
+                <option value="日本">日本</option>
+                <option value="法國">法國</option>
+                <option value="中國">中國</option>
+                <option value="紐西蘭">紐西蘭</option>
+                <option value="西班牙">西班牙</option>
+                <option value="葡萄牙">葡萄牙</option>
+                <option value="菲律賓">菲律賓</option>
+                <option value="馬來西亞">馬來西亞</option>
+                <option value="韓國">韓國</option>
+                <option value="其他">其他</option>
+            </select>
+            <!--下拉選單-->
+        </div>
+        <div>
+            <label for="">興趣:</label><br>
+            <input type="checkbox" name="habbit1">念書 <br>
+            <input type="checkbox" name="habbit2">爬山 <br>
+            <input type="checkbox" name="habbit3">打電動 <br>
+            <input type="checkbox" name="habbit3">其他 <br>
+        </div>
+        <div>
+            <label for="">性別:</label>
+            <input type="radio" name="habbit1" value="1">男
+            <input type="radio" name="habbit2" value="2">女
+        </div>
+        <div>
+            <hr>
+            當您註冊完成或開始使用本服務時，即表示您已閱讀、
+            了解並同意接受本服務條款之所有內容。
+            <br>
+            <hr>
+            <input type="checkbox" name="habbit1">我會遵守以上XX規範
+        </div>
+        <div>
+            <input type="submit" value="確定送出">
+            <input type="reset" value="重新填寫">
+            <input type="reset" value="登入">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
