@@ -1,0 +1,55 @@
+.ct{
+    text-align: center;
+}
+
+.box{
+    border: 1px solid black;
+}
+.pad10{
+    padding: 10px;
+}
+.text{
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+.tt{
+    width: 550px;
+    height: 120px;
+    background: red;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px;
+    border: 30px;
+    color: aliceblue;
+    font-size: 50px;
+    text-align: center;
+    }
+    ul{
+        list-style: none;
+    }
+    ul li{
+        margin: 5px;
+    }
+    ul ul{
+        margin: 15px;
+    }
+    .li1{
+        background: yellowgreen;
+        border-radius: 10px;
+    }
+    .li2{
+        background: yellow;
+        border-radius: 10px;
+    }
+    ul li li:nth-child(3){
+        background: rebeccapurple;
+    }
+    h1:nth-of-type(2):hover {
+        background: bisque;
+        cursor: pointer;
+    }
+    .mm:hover{
+        color: aqua;
+        cursor: pointer;
+    }
