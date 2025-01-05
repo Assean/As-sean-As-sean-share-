@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0105javascript練習</title>
+    <style>
+        .stu {
+            color: blue;
+            border-radius: 20px;
+            color: black;
+            border: 4px solid;
+            position: 20px;
+            margin: 10px;
+            text-align: center;
+            background: yellowgreen;
+            transition: 2s;
+        }
+
+        .stu:hover {
+            color: red;
+            background: bisque;
+            border: 2px solid;
+            margin: 25px;
+            cursor: pointer;
+        }
+        .box{
+            width: 100px;
+            min-height: 100px;
+            border: 1px solid black;
+        }
+        .box:hover{
+            cursor: pointer;
+        }
+        .b2,.b4{
+            width: 500px;
+        }
+        
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+    
+</head>
+
+<body>
+    <h1>
+        <center>
+            0105javascript練習
+        </center>
+    </h1>
+    <a class="a1" href="/index.html">返回</a>
+    <div class="box b1">test1</div>
+    <div class="box b2">test2</div>
+    <div class="box b3">test3 </div>
+    <div class="box b4">test4</div>
+    <div class="box b5">test5</div>
+
+
+    
+</body>
+
+</html>
+<script>
+    let test1=$(".b1").text()
+    console.log("B1裡的文字為"+test1)
+
+    test1="今天天氣不錯"
+    $(".b1").text(test1)
+
+
+
+    let name = 'mack'
+    let age = 40
+    console.log(name, age)
+    //document.write(name+"今年"+age+"歲")
+    console.log(age * 2, age + 2, age - 10, age / 2)
+    console.log("我的名字是" + name)
+    console.log("我今年" + [3 + [age - 10] * 2])
+
+    let score = 50
+
+    if (score < 60) {
+        console.log("你的成績為" + score + "判定為不及格")
+    } else {
+        console.log("你的成績為" + score + "判定為及格")
+    }
+
+    let scores = Array(); //陣列
+    scores = [20, 60, 70, 50, 80]
+    let students = new Array()
+    students = ['Judy', 'mack', 'john', 'shelly', 'Tom']
+    console.log(students[2] + '的成績是' + scores[2])
+
+    //迴圈
+    for (let i = 0; i < 5; i = i + 1) {
+        console.log(students[i] + '的成績是' + scores[i])
+    }
+    for (let i = 0; i < 5; i = i + 1) {
+        document.write("<div class='stu'>" + students[i] + '的成績是' + scores[i] + "<div/>")
+    }
+
+    for(let i=0;i<8;i++){
+        
+        $(".b2").append("<div class='stu'>"+students[i]+'的成績是'+score[i]+"</div>")
+    }
+
+    //事件
+    let check=1
+    $(".b3").on("click",function(){
+        let list=""
+        if(check==1){
+        for(let i=0;i<8;i++){
+            list=list+"<div class='stu'>"+students[i]+'的成績是'+score[i]+"</div>"
+        }
+        check=0
+    }else{
+        check=1
+    }
+        $(".b4").html(list)
+    })
+
+    
+</script>
